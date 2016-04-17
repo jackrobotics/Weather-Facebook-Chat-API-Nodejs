@@ -21,7 +21,7 @@ login({email: facebookEmail, password: facebookPassword}, function callback (err
     if(err) return console.error(err);
  
     api.listen(function callback(err, message) {
-    	var weatherText = /^พยากรอากาศ(.*?)$/
+    	var weatherText = /^พยากรณ์อากาศ(.*?)$/
     	var _weatherText = message.body.match(weatherText);
     	if(_weatherText)
     	{
@@ -36,7 +36,7 @@ login({email: facebookEmail, password: facebookPassword}, function callback (err
 						var fx = result.forecast.txt_forecast.forecastday;
 				    	var ans=fx[2].title + ' : ' +fx[2].fcttext;
 				    	ans += "\n" + fx[3].title + ' : ' +fx[3].fcttext;
-				    	api.sendMessage("พยากรอากาศ : "+weatherCity+"\n"+ans, message.threadID);
+				    	api.sendMessage("พยากรณ์อากาศ : "+weatherCity+"\n"+ans, message.threadID);
 					}
 				});
 			});
