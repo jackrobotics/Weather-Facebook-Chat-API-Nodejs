@@ -13,4 +13,4 @@ Thank you P'Comdet :)
 	var APIGOOGLE = 'yourGoogleAPI';
 	var APIWUNDERGROUND = 'yourWundergroundAPI';
 ## Facebook Example
-!['img'](https://github.com/jackrobotics/Weather-Facebook-Chat-API-Nodejs/blob/master/Screen-Shot-2559-04-16-at-8.46.37-PM.jpg)
+พิมพ์ Chat Facebook ว่า พยากรณ์อากาศตามด้วยจังหวัด เช่น พยากรณ์อากาศกรุงเทพ เป็นต้น
